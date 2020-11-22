@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>40 HTML TAGS</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<center><h1><u>Introduction</u></h1></center>
+	</header>
+	<section>
+		<div>
+			<p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. 
+			Lorem Ipsum has been the industry's standard dummy text ever since the <small>1500s</small>, 
+			when an unknown printer took a galley of type and <del>scramble</del> it to <ins>make a type</ins> specimen book. <br>
+			It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+			It was popularised in the <small>1960s</small> with the release of Letraset sheets containing <i>Lorem Ipsum passages</i>, 
+			and more recently with desktop publishing software like <mark>Aldus PageMaker</mark> including versions of <a href="https://www.lipsum.com/">Lorem Ipsum.</a></p>
+		</div>
+		<hr>
+		<div>
+			<!--defines some content aside from the content it is placed in-->
+			<aside>
+				<h4>Epcot Center</h4>
+				<p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+			</aside>
+		</div>
+		<hr>
+		<div>
+			<audio controls>
+				<source src=Carnival.mp3 type=audio/mpeg>
+			</audio>
+		</div>
+		<hr>
+		<div>
+			<!--Bi-Directional Isolation-->
+			<ul>
+				<li>User <bdi>hrefs</bdi>: 60 points</li>
+				<li>User <bdi>jdoe</bdi>: 80 points</li>
+				<li>User <bdi>إيان</bdi>: 90 points</li>
+			</ul>
+		</div>
+		<hr>
+		<div>
+			<!--Bi-Directional Override-->
+			<p>This paragraph will go left-to-right.</p>  
+			<p><bdo dir="rtl">This paragraph will go right-to-left.</bdo></p> 
+		</div>
+		<hr>
+		<div>
+			<!--a section that is quoted from another source-->
+			<blockquote>
+			For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+			</blockquote>
+		</div>
+		<hr>
+		<div>
+			<button type="button">Click Me!</button>
+		</div>
+		<hr>
+		<div>
+			<p>The HTML <code>button</code> tag defines a clickable button.</p>
+		</div>
+		<hr>
+		<div>
+			<dl>
+			  <dt>Coffee</dt>
+			  <dd>Black hot drink</dd>
+			  <dt>Milk</dt>
+			  <dd>White cold drink</dd>
+			</dl>
+		</div>
+		<hr>
+		<div>
+			<table>
+			  <caption>Monthly savings</caption>
+			  <tr>
+				<th>Month</th>
+				<th>Savings</th>
+			  </tr>
+			  <tr>
+				<td>January</td>
+				<td>$100</td>
+			  </tr>
+			  <tr>
+				<td>February</td>
+				<td>$50</td>
+			  </tr>
+			</table>
+		</div>
+		<hr>
+		<div>
+			<details>
+			  <summary>Epcot Center</summary>
+			  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+			</details>
+		</div>
+		<hr>
+		<div>
+			<p>This is some text.</p>
+			<p>This is some text.</p>
+
+			<dialog open>This is an open dialog window</dialog>
+
+			<p>This is some text.</p>
+			<p>This is some text.</p>
+		</div>
+		<hr>
+		<div>
+			<figure>
+			  <img src="curnivalofrust.jpg" alt="Curnival of Rust">
+			  <figcaption>Fig.1 - Curmival Of Rust</figcaption>
+			</figure>
+		</div>
+		<hr>
+		<!--define keyboard input. The content inside is displayed in the browser's default monospace font.-->
+		<p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
+
+		<p>Press <kbd>Cmd</kbd> + <kbd>C</kbd> to copy text (Mac OS).</p>
+		<hr>
+		<label for="disk_c">Disk usage C:</label>
+		<meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter>
+		<hr>
+		<object data="curnivalofrust.jpg" width="300" height="200"></object>
+		<hr>
+		<ol>
+		  <li>Coffee</li>
+		  <li>Tea</li>
+		  <li>Milk</li>
+		</ol>
+		<hr>
+		<form>
+		  <label for="cars">Choose a car:</label>
+		  <select name="cars" id="cars">
+			<optgroup label="Swedish Cars">
+			  <option value="volvo">Volvo</option>
+			  <option value="saab">Saab</option>
+			</optgroup>
+			<optgroup label="German Cars">
+			  <option value="mercedes">Mercedes</option>
+			  <option value="audi">Audi</option>
+			</optgroup>
+		  </select>
+		</form>
+		<hr>
+		<label for="cars">Choose a car:</label>
+
+		<select id="cars">
+		  <option value="volvo">Volvo</option>
+		  <option value="saab">Saab</option>
+		  <option value="opel">Opel</option>
+		  <option value="audi">Audi</option>
+		</select>
+		<hr>
+		<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+		<input type="range" id="a" value="0">	+	<input type="number" id="b" value="0">	= <output name="x" for="a b"></output>
+		</form>
+		<hr>
+		<object data="Carnival.mp3">
+		<param name="autoplay" value="true">
+		</object>
+		<hr>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/RBumgq5yVrA" 
+		frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+		</iframe>
+		<hr>
+		<pre>
+		Text in a pre element
+		is displayed in a fixed-width
+		font, and it preserves
+		both      spaces and
+		line breaks
+		</pre>
+		<hr>
+		<label for="file">Downloading progress:</label>
+		<progress id="file" value="32" max="100"> 32% </progress>
+		<hr>
+		<p>WWF's goal is to: 
+		<q>Build a future where people live in harmony with nature.</q>
+		We hope they succeed.</p>
+		<hr>
+		<p>This text contains <sub>subscript</sub> text.</p>
+		<p>This text contains <sup>superscript</sup> text.</p>
+		<hr>
+		<textarea name="w3review" rows="4" cols="50"></textarea>
+		<hr>
+	</section>
+	<footer>
+		<center><img src="F:\Primeasia\FALL 2020\Internet and Web Technologies\Assignments\Project one\lorep.png" alt="Lorem Ipsum"></center>
+	</footer>
+</body>
+</html>
